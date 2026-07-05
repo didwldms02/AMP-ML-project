@@ -26,9 +26,7 @@
 
 ## 결과
 
-- 학습/평가 데이터를 8:2로 분할하여 평가
-- SVM 모델이 평가 데이터 정확도 89.9%로 가장 우수
-- 순전하(net charge)가 가장 중요한 판별 인자로 확인됨
+학습/평가 데이터를 8:2로 분할하여 평가한 결과, SVM 모델이 평가 데이터 정확도 89.9%로 가장 우수했다.
 
 | 모델 | 정확도 |
 |------|--------|
@@ -36,6 +34,24 @@
 | Random Forest | 89.4% |
 | Gradient Boosting | 87.0% |
 | Logistic Regression | 77.8% |
+
+### 특성 분포 (AMP vs non-AMP)
+
+AMP는 비AMP보다 순전하(net charge)가 높고 음전하가 낮은 경향을 보인다.
+
+![특성 분포](figures/boxplot.png)
+
+### PCA
+
+두 집단이 완전히 분리되지는 않으나 분포 경향에 차이가 있다.
+
+![PCA](figures/pca.png)
+
+### 변수 중요도
+
+순전하(net charge)가 가장 중요한 판별 인자로 확인되었다.
+
+![Feature Importance](figures/feature_importance.png)
 
 ## 실행 방법
 
