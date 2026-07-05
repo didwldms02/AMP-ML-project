@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29675020/README.md)
 # AMP-ML-project
 
 머신러닝을 이용한 항균 펩타이드(Antimicrobial Peptide, AMP) 후보 서열 분류 프로젝트
